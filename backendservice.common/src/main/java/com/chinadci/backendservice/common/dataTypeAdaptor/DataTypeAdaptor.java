@@ -40,7 +40,7 @@ public class DataTypeAdaptor extends TypeAdapter<ServiceListResult> {
       return;
     }
 
-    out.beginObject();
+    out.beginObject();//开始接受
     out.name("ReturnCode");
     gson.getAdapter(Integer.class).write(out, value.ReturnCode);
     out.name("Message");
